@@ -25,4 +25,3 @@ public class MyRequest implements ServletRequestListener
 		}
 
 } /*----- Fin de la classe -----*/
-

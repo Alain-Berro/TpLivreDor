@@ -30,15 +30,6 @@
 
 			<button type="submit" formaction="Supprimer">Oui</button>
 			<button type="submit" name="type_action" value="Supprimer">Non</button>
-<<<<<<< Upstream, based on origin/master
-			<button type="submit" name="type_action" value="Annuler">Annuler</button> 
-		</form>
-
-		<!-- Partie JSTL -->		
-		<hr/>
-		<h3>Affichage JSTL</h3>
-		<c:forEach var="num" items="${sessionScope.liste_suppr}">${num} </c:forEach>
-=======
 			<button type="submit" name="type_action" value="Annuler">Annuler</button>
 		</form>
 
@@ -47,7 +38,6 @@
 		<h3>Affichage JSTL</h3>
 		<c:forEach var="num" items="${sessionScope.liste_suppr}">${num} </c:forEach>
 		-->
->>>>>>> 1dd6248 First commit
 
     </body>
 </html>

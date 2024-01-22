@@ -30,11 +30,13 @@ public class Central extends HttpServlet
 			{
 			switch (action)
 				{
-				case "Saisir":
+				case "Saisir" ->
+					{
 					url = "SaisirMessage";
-					break;
+					}
 
-				case "Modifier":
+				case "Modifier" ->
+					{
 					try {
 						url="ModifierMessage";
 						request.setAttribute("message", Bd.lireMessage(request.getParameter("id")));
@@ -44,9 +46,10 @@ public class Central extends HttpServlet
 						url = "LeLivreDor";
 						request.setAttribute("msg_erreur", ex.getMessage());
 						}
-					break;
+					}
 
-				case "Afficher":
+				case "Afficher" ->
+					{
 					try {
 						url = "LireMessage";
 						request.setAttribute("liste", Bd.lireMessages());
@@ -56,9 +59,10 @@ public class Central extends HttpServlet
 						url = "LeLivreDor";
 						request.setAttribute("msg_erreur", e.getMessage());
 						}
-					break;
+					}
 
-				case "Supprimer":
+				case "Supprimer" ->
+					{
 					try {
 						/*----- Partie pour affichage JSP -----*/
 						url = "ChoisirSupprMessage";
@@ -82,15 +86,20 @@ public class Central extends HttpServlet
 						url = "LeLivreDor";
 						request.setAttribute("msg_erreur", e.getMessage());
 						}
-					break;
+					}
 
-				case "Annuler":
+				case "Annuler" ->
+					{
+					url = "LeLivreDor";
+
 					/*----- Suppression d'un élément en session -----*/
 					request.getSession().removeAttribute("liste_suppr"); // après type_action=Annuler
-				case "Retour": ;
+					}
 
-				default:
+				default -> // Dont "Retour"
+					{
 					url = "LeLivreDor";
+					}
 				}
 			}
 

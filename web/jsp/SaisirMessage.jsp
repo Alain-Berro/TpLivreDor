@@ -18,23 +18,14 @@
 				<tr><td>Message</td><td><input type="text" name="message" value="${param.message}" /></td></tr>
 				<tr><td></td><td><input type="submit" value="Enregistrer" /></td></tr>
 			</table>
-        </form>
+                </form>
 
-<<<<<<< Upstream, based on origin/master
-		<div class="msg_erreur">${msg_erreur}</div>
-		<div class="msg_info">${msg_info}</div>
-
-		<form action="Central"
-			  method="get">
-			<input type="submit" name="type_action" value="Retour" /> 
-=======
 		<div class="msg_erreur">${requestScope.msg_erreur}</div>
 		<div class="msg_info">${requestScope.msg_info}</div>
 
 		<form action="Central"
 			  method="get">
 			<input type="submit" name="type_action" value="Retour" />
->>>>>>> 1dd6248 First commit
 		</form>
 	</body>
 </html>
