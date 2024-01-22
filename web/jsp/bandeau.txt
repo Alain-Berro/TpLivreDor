@@ -1,0 +1,8 @@
+<table style="width:100%">
+	<tr>
+		<td align="left" valign="middle" width="200"><img src="image/Tomcat.gif" width="130" height="92" alt="Tomcat"></td>
+		<td align="center" valign="middle"><font size="+2">D&eacute;veloppement d'Application Web</font></td>
+		<td align="right" valign="middle" width="200"><img src="image/Java.gif" width="52" height="88" alt="Java"></td>
+	</tr>
+</table>
+<hr />

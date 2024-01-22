@@ -1,0 +1,73 @@
+/*---------------*/
+/* Style du site */
+/*---------------*/
+
+html {
+	height: 100%;
+}
+
+/*----- Définition des marges et de la couleur de fond des pages -----*/
+body {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+/*----- Style spécifique au paragraphe de type 'msg_erreur' -----*/
+div.msg_erreur {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+/*----- Style spécifique au paragraphe de type 'msg_info' -----*/
+div.msg_info {
+	color: #00FF00;
+	font-weight: bold;
+}
+
+/*----- Mise en forme de la balise h1 et h3 -----*/
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+/*----- Formulaire -----*/
+form {
+	background-color: #F3F0ED;
+}
+
+/*----- Label -----*/
+label {
+	display: inline-block;
+	width: 120px;
+	text-align: left;
+}
+
+/*----- Style spécifique pouvant s'appliquer et tout type de balise -----*/
+.important {
+	color: blue;
+	font-weight: bold;
+}
+
+.commande:hover {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*----- Style pour le liens HTML -----*/
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #f6fbfc;
+	text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+<<<<<<< Upstream, based on origin/master
+=======
+
+>>>>>>> 1dd6248 First commit
+----------
+JSTL
+----------
+Les descripteurs de déploiement ne sont pas utilisés dans la correction JSTL.
+
+Idées
+- Messagerie interne.
+- Download et upload de fichier.
+- Graphisme en java pour KPI.
+- Fichier Excel
+
+Mettre des <label> en html 5 !
