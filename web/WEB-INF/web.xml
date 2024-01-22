@@ -77,26 +77,6 @@
         <url-pattern>/LireMessage</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-<<<<<<< Upstream, based on origin/master
-        <servlet-name>CtrlCentral</servlet-name>
-        <url-pattern>/Central</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ConfirmerSupprMessage</servlet-name>
-        <url-pattern>/ConfirmerSupprMessage</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ChoisirSupprMessage</servlet-name>
-        <url-pattern>/ChoisirSupprMessage</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ModifierMessage</servlet-name>
-        <url-pattern>/ModifierMessage</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CtrlModifier</servlet-name>
-        <url-pattern>/Modifier</url-pattern>
-=======
         <servlet-name>ConfirmerSupprMessage</servlet-name>
         <url-pattern>/ConfirmerSupprMessage</url-pattern>
     </servlet-mapping>
@@ -115,7 +95,6 @@
     <servlet-mapping>
         <servlet-name>CtrlCentral</servlet-name>
         <url-pattern>/Central</url-pattern>
->>>>>>> 1dd6248 First commit
     </servlet-mapping>
     <session-config>
         <session-timeout>
