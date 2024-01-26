@@ -16,6 +16,22 @@ body {
 	color: #000000;
 }
 
+/*----- Style pour les tables -----*/
+table.tab {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+
+table.tab th, table.tab td {
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding: 5px;
+}
+
 /*----- Style spécifique au paragraphe de type 'msg_erreur' -----*/
 div.msg_erreur {
 	color: #FF0000;

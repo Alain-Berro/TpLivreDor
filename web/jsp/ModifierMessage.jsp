@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Modifier un message</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Modifier un message</title>
 
-        <link href="css/LeLivreDor.css" rel="stylesheet" type="text/css" />
+		<link href="css/LeLivreDor.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
 	<%@include file="bandeau.txt" %>
@@ -14,7 +14,7 @@
 		<form action="Modifier"
 			  method="get">
 			<table>
-				<tr><td>Identifiant</td><td><input type="text" name="id" value="${requestScope.message.id}" readonly="true" /></td></tr>
+				<tr><td>Identifiant</td><td><input type="text" name="id" value="${requestScope.message.id}" readonly="readonly" /></td></tr>
 				<tr><td>Pseudo</td><td><input type="text" name="pseudo" value="${requestScope.message.pseudo}" /></td></tr>
 				<tr><td>Message</td><td><input type="text" name="message" value="${requestScope.message.message}" /></td></tr>
 				<tr><td></td><td><input type="submit" value="Enregistrer" /></td></tr>

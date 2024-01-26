@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Le livre d'or</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Le livre d'or</title>
 
 		<link href="css/LeLivreDor.css" rel="stylesheet" type="text/css" />
     </head>
@@ -33,11 +33,10 @@
 			<button type="submit" name="type_action" value="Annuler">Annuler</button>
 		</form>
 
-		<!-- Partie JSTL
+		<!-- Partie JSTL -->
 		<hr/>
 		<h3>Affichage JSTL</h3>
 		<c:forEach var="num" items="${sessionScope.liste_suppr}">${num} </c:forEach>
-		-->
 
     </body>
 </html>

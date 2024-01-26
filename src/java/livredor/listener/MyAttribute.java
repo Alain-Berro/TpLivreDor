@@ -1,5 +1,6 @@
 package livredor.listener;
 
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.annotation.WebListener;
@@ -15,19 +16,25 @@ public class MyAttribute implements HttpSessionAttributeListener
 	@Override
 	public void attributeAdded(HttpSessionBindingEvent event)
 		{
-		LOG.log(Level.INFO, "-----> Attribut ajout\u00e9 : {0} = {1}", new Object[]{event.getName(), event.getValue().toString()});
+		LOG.log(Level.INFO, "-----> Attribut ajout\u00e9 : {0} = {1}",
+							new Object[]{event.getName(),
+							(event.getValue().getClass().isArray() ? Arrays.toString((Object[])event.getValue()) : event.getValue().toString())});
 		}
 
 	@Override
 	public void attributeRemoved(HttpSessionBindingEvent event)
 		{
-		LOG.log(Level.INFO, "-----> Atrtibut supprim\u00e9 :{0} = {1}", new Object[]{event.getName(), event.getValue().toString()});
+		LOG.log(Level.INFO, "-----> Attribut supprim\u00e9 :{0} = {1}",
+							new Object[]{event.getName(),
+							(event.getValue().getClass().isArray() ? Arrays.toString((Object[])event.getValue()) : event.getValue().toString())});
 		}
 
 	@Override
 	public void attributeReplaced(HttpSessionBindingEvent event)
 		{
-		LOG.log(Level.INFO, "-----> Attribut modifi\u00e9 :{0} = {1}", new Object[]{event.getName(), event.getValue().toString()});
+		LOG.log(Level.INFO, "-----> Attribut modifi\u00e9 :{0} = {1}",
+							new Object[]{event.getName(),
+							(event.getValue().getClass().isArray() ? Arrays.toString((Object[])event.getValue()) : event.getValue().toString())});
 		}
 
  } /*----- Fin de la classe -----*/

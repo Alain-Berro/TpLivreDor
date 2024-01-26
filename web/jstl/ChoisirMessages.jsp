@@ -43,7 +43,7 @@
 		  action="ConfirmerSupprMsg.jsp"
 		  method="get">
 
-	<table border="1" cellspacing="0" cellpadding="5">
+	<table class="tab">
 		<tr>
 			<th>Choisir</th>
 			<th>Numéro</th>

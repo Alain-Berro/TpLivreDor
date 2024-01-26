@@ -4,10 +4,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
-import javax.servlet.annotation.WebListener;
 
 
-@WebListener
+//@WebListener
 public class MyRequest implements ServletRequestListener
 {
 	private static final Logger LOG = Logger.getLogger(MyContext.class.getName());

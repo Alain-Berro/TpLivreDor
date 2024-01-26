@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Le livre d'or</title>
 
 		<link href="css/LeLivreDor.css" rel="stylesheet" type="text/css" />

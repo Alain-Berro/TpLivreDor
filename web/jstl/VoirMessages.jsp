@@ -33,7 +33,7 @@
 		3. Parcours de la liste des nuplets à l'aide d'une boucle.
 		   Chaque nuplet est traité un à un.
 	--%>
-	<table border="1" cellspacing="0" cellpadding="5">
+	<table class="tab">
 		<tr>
 			<th>Texte</th>
 			<th>Pseudo</th>

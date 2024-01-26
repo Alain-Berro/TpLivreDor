@@ -8,19 +8,19 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Le livre d'or</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Le livre d'or</title>
 
 		<link href="css/LeLivreDor.css" rel="stylesheet" type="text/css" />
-    </head>
+	</head>
 
-    <body>
+	<body>
 		<%@include file="bandeau.txt" %>
 
         <h1>Les messages du livre d'or</h1>
 
-		<table border="1" cellspacing="1" cellpadding="5">
+		<table class="tab">
 			<tr><th>Pseudo</th><th>Message</th><th></th><th>En Ajax</th></tr>
 		<%
 			/*----- Lecture de la liste des messages et affichage -----*/
@@ -40,17 +40,16 @@
 			<button type="submit" name="type_action" value="Retour">Retour</button>
 		</form>
 
-		<!-- Partie JSTL
+		<!-- Partie JSTL -->
 		<hr/>
 		<h3>Affichage du tableau avec JSTL</h3>
-		<table border="1" cellspacing="1" cellpadding="5">
+		<table class="tab">
 		<tr><th>Pseudo</th><th>Message</th></tr>
 			<c:forEach var="msg" items="${requestScope.liste}">
 				<tr><td>${fn:escapeXml(msg.pseudo)}</td><td>${fn:escapeXml(msg.message)}</td></tr>
 			</c:forEach>
 		</table>
-		-->
 
-                <script type="text/JavaScript" src="js/FctAjax.js"></script>
+		<script type="text/JavaScript" src="js/FctAjax.js"></script>
     </body>
 </html>

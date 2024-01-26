@@ -1,4 +1,3 @@
-<%@page import="java.util.Enumeration"%>
 <%@page import="livredor.metier.Util"%>
 <%@page import="java.util.List"%>
 <%@page import="livredor.bd.ExceptionLivreDor"%>
@@ -10,8 +9,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Le livre d'or</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Le livre d'or</title>
 
 		<link href="css/LeLivreDor.css" rel="stylesheet" type="text/css" />
     </head>
@@ -24,7 +23,7 @@
 		<form action="Confirmer"
 			  method="get">
 
-		<table border="1" cellspacing="1" cellpadding="5">
+		<table class="tab">
 		<tr><th>Choisir</th><th>Num&eacute;ro</th><th>Pseudo</th><th>Message</th></tr>
 		<%
 			/*----- Liste préalable des messages à supprimer -----*/
@@ -55,10 +54,11 @@
 			<input type="submit" name="type_action" value="Retour" />
 		</form>
 
-		<!-- Partie JSTL
+		<!-- Partie JSTL -->
+
 		<hr/>
 		<h3>Affichage du tableau avec JSTL</h3>
-		<table border="1" cellspacing="1" cellpadding="5">
+		<table class="tab">
 		<tr><th>Choisir</th><th>Num&eacute;ro</th><th>Pseudo</th><th>Message</th></tr>
 		<c:forEach var="msg" items="${requestScope.liste_triee}">
 			<tr>
@@ -69,7 +69,6 @@
 			</tr>
 		</c:forEach>
 		</table>
-		-->
 
     </body>
 </html>

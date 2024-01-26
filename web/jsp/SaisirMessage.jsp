@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Saisir un message</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Saisir un message</title>
 
 		<link href="css/LeLivreDor.css" rel="stylesheet" type="text/css" />
     </head>
@@ -18,7 +18,7 @@
 				<tr><td>Message</td><td><input type="text" name="message" value="${param.message}" /></td></tr>
 				<tr><td></td><td><input type="submit" value="Enregistrer" /></td></tr>
 			</table>
-                </form>
+		</form>
 
 		<div class="msg_erreur">${requestScope.msg_erreur}</div>
 		<div class="msg_info">${requestScope.msg_info}</div>

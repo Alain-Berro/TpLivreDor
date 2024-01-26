@@ -2,7 +2,8 @@ package livredor.ctrl;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.TreeMap;
+import java.util.HashMap;
+import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -72,12 +73,11 @@ public class Central extends HttpServlet
 						/*
 						 * Le modèle est plus proche du MVC.
 						 */
-						ArrayList<MessageDor> lt = Bd.lireMessages();
+						ArrayList<MessageDor> lst = Bd.lireMessages();
 						String[] t = (String[])request.getSession().getAttribute("liste_suppr");
 
-						TreeMap<MessageDor,String> tmap= new TreeMap<>();
-
-						lt.forEach((msg) -> { tmap.put(msg, Util.isChecked(t, msg.getId())); });
+						Map<MessageDor,String> tmap= new HashMap<>();
+						lst.forEach((msg) -> { tmap.put(msg, Util.isChecked(t, msg.getId())); });
 
 						request.setAttribute("liste_triee", tmap);
 						}
